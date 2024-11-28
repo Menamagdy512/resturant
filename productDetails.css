@@ -1,0 +1,95 @@
+.header{
+    background-color: #426E5D;
+}
+.header .headerContainer{
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .right,
+.header .left{
+    display: flex;
+    align-items: center;
+}
+.header .left .rate,
+.header .left .ask,
+.header .right .search,
+.header .right .lang{
+    display: flex;
+    align-items: center;
+}
+.header .logo{
+    width: 90px;
+    margin-right: 30px;
+}
+.header .left .rate{
+    background-color: #760C3C;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: white;
+    gap: 6px;
+}
+.header .left .ask{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #760C3C;
+    gap: 6px;
+    margin-left: 20px;
+}
+.header .right{
+    width: 30%;
+}
+.header .right .search{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #760C3C;
+    gap: 6px;
+    margin-right: 20px;
+    width: 100%;
+}
+.header .right .search input{
+    border: none;
+    outline: 0;
+    width: 100%;
+}
+.header .right .lang{
+    gap: 6px;
+}
+.header .right .lang span{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    transform: rotate(90deg);
+}
+.header .right .lang img{
+    width: 30px;
+}
+
+
+@media ( max-width : 767px ){
+    .header .headerContainer{
+        padding: 0 10px 0 0;
+    }
+    .header .logo{
+        width: 70px;
+        margin-right: 0;
+    }
+    .header .left .rate span,
+    .header .left .ask span{
+        display: none;
+    }
+    .header .right{
+        width: 48%;
+    }.header .right .search{
+        margin-right: 5px;
+    }
+    .header .left .ask{
+        margin-left: 5px;
+    }
+}
+
