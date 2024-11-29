@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.main-menu{
     background-color: #426E5D;
     min-height: 100vh;
     display: flex;
@@ -77,15 +77,15 @@ body {
     }
 
     .buttons-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة في الشبكة */
-        gap: 12px; /* فجوة بين الأزرار */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 12px; 
         width: 100%;
-        padding: 15px; /* تعديل الحواف */
+        padding: 15px; 
     }
 
     .menu-button {
-        padding: 12px 25px; /* تصغير حجم الأزرار قليلاً */
-        font-size: 15px; /* تقليل حجم النص */
+        padding: 12px 25px; 
+        font-size: 15px; 
     }
     .footer-image {
     

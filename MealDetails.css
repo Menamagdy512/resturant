@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+.meal-details {
     background-color:#426E5D ;
     color: #ffffff;
     min-height: 100vh;
