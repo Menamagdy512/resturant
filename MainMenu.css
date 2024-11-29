@@ -172,6 +172,41 @@ body {
     height: 200px;
     object-fit: cover;
 }
+/* الشاشات المتوسطة */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        height: auto; 
+    }
+
+    .side-image {
+        width: 150px; 
+        object-fit: cover;
+    }
+
+    .buttons-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة في الشبكة */
+        gap: 12px; /* فجوة بين الأزرار */
+        width: 100%;
+        padding: 15px; /* تعديل الحواف */
+    }
+
+    .menu-button {
+        padding: 12px 25px; /* تصغير حجم الأزرار قليلاً */
+        font-size: 15px; /* تقليل حجم النص */
+    }
+    .footer-image {
+    
+        height: 60px;
+    }
+    .header-image {
+       
+        height: 60px;
+    }
+}
 
 /* الشاشات الصغيرة */
 @media (max-width: 768px) {
@@ -179,6 +214,7 @@ body {
         flex-direction: column;
         align-items: center; 
         gap: 10px;
+        
     }
 
     .side-image {
@@ -206,3 +242,4 @@ body {
         height: 60px;
     }
 }
+
