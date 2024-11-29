@@ -142,7 +142,6 @@ h1 {
 .food-image {
     height: 300px;
     margin: 0 auto 30px;
-  
 }
 
 .food-image img {
@@ -170,7 +169,6 @@ h2 {
 }
 
 .description {
-   
     margin: 0 auto;
     line-height: 1.6;
     font-size: 30px;
