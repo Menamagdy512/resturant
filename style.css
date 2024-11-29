@@ -151,9 +151,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.top-image{
-
-}
 .main-content .bottom-image{
 transform:translateX(-170px) ;
 }    
