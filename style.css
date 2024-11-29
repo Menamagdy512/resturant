@@ -26,4 +26,147 @@ body{
             transform: translate(120px,350px);
         }
 }
+<<<<<<< HEAD
+
+/* Main Content Styles */
+.main-content {
+    width:100% ;
+    margin:auto;
+    position: relative;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.menu-item {
+    background: #760C3C;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    height: 4rem;
+    font-size: 0.875rem;
+}
+
+.side-image {
+    position: absolute;
+    width: 200px;
+    height: 380px;
+    border-radius: 0.75rem;
+}
+
+.left-image {
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-image {
+    right: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-content .bottom-image{
+transform:translateX(-170px) ;
+}    
+.background-img{
+    position: absolute;
+    width: 90%;
+    height: 380px;
+}
+.drinks h1{
+color: white;
+text-align: center;
+font-weight: 700;
+font-family: Akatab;
+font-size: 64px;
+line-height: 87.63px;
+}
+.drinks h2{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49.29px;
+}
+
+.drinks span{
+    color: #760C3C;
+}
+.images{
+    display: flex;
+    margin-top: 100px;
+    width: 1170px;
+    height: 300px;
+    top: 282px;
+    left: 135px;
+}
+.images img{
+    margin-left:100px;
+    padding-left: 40px;
+    width: 200px;
+    height: 300px;
+    padding-bottom: 15px;
+}
+.images button{
+    display: flex;
+    transform: translateX(130px);
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 65px;
+    border-radius: 20px;
+    background-color: #760C3C;
+    color: white;
+    font-family:Inter;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.73px;
+}
+p{
+    margin-top:200px ;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 5%;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-buttons {
+        flex-wrap: wrap;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+
+
+
+.drinks .images button a{
+    text-decoration: none;
+    color: white;
+=======
+>>>>>>> 32c36534357368613a500293416053a2c22f0c17
 }

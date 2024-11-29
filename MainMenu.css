@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -239,3 +242,27 @@ body{
     }
 }
 
+
+
+.buttons-grid .menu-button a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+
+.back{
+    background-color: #ccc;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
