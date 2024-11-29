@@ -126,6 +126,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 .content .box{
     background-color: #D9D9D9;
@@ -160,3 +161,18 @@ body{
 }
 }
 /*  End Content --------------------------------- */
+
+
+.back{
+    background-color: #ccc;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
