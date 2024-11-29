@@ -172,6 +172,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 
@@ -252,6 +253,8 @@ p {
     
 a {
     text-decoration: none;
+    color: white;
+
 }
    
     p {
@@ -306,6 +309,10 @@ a {
     p {
         margin-top: 50px;
         font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
     }
 }
 
