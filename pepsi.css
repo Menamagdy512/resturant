@@ -1,10 +1,10 @@
+body{
+    background-color: #426E5D;
+}
 .container{
     max-width: 1640px;
     margin: 0 auto;
     padding: 0 20px; 
-}
-body{
-    background-color: #426E5D;
 }
 
 /*  Start Header --------------------------------- */
