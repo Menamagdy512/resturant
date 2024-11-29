@@ -145,14 +145,16 @@ h1 {
 
 .menu-item {
     background-color: #d9d9d9d3;
-    
     border-radius: 40px;
     padding-bottom: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: start;
-
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .menu-item img {
