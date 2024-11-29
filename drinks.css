@@ -104,7 +104,8 @@ body {
         margin-left: 5px;
     }
 }
-.drinks h1{
+
+.drinks h1 {
     color: white;
     text-align: center;
     font-weight: 700;
@@ -112,64 +113,80 @@ body {
     font-size: 64px;
     line-height: 87.63px;
     margin-top: 30px;
-    }
-    .drinks h2{
-        color: white;
-        text-align: center;
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 49.29px;
-    }
-    
-    .drinks span{
-        color: #760C3C;
-    }
-    .images{
-        display: flex;
-        margin-top: 100px;
-        width: 1170px;
-        height: 300px;
-        top: 282px;
-        left: 135px;
-    }
-    .images img{
-        margin-left:100px;
-        padding-left: 40px;
-        width: 200px;
-        height: 300px;
-        padding-bottom: 15px;
-    }
-    .images button{
-        display: flex;
-        transform: translateX(130px);
-        width: 200px;
-        height: 60px;
-        padding: 10px;
-        margin: 10px;
-        padding-left: 65px;
-        border-radius: 20px;
-        background-color: #760C3C;
-        color: white;
-        font-family:Inter;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38.73px;
-    }
-    p{
-        margin-top:200px ;
-        text-align: center;
-        font-family: Inter;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 35px;
-        letter-spacing: 5%;
-        color: white;
-    }
+}
+
+.drinks h2 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49.29px;
+}
+
+.drinks span {
+    color: #760C3C;
+}
+
+.images {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px; 
+    margin-left: 40px;
+}
+
+.images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.images button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #760C3C;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38.73px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
 
 
+p {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 5%;
+    color: white;
+}
 
-    
-.back{
+/* زر العودة */
+.back {
     background-color: #ccc;
     position: absolute;
     top: 120px;
@@ -182,13 +199,113 @@ body {
     justify-content: center;
     cursor: pointer;
 }
-@media ( max-width : 767px ) {
+
+/* الشاشات المتوسطة (من 768px إلى 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+    .drinks h1 {
+        font-size: 56px;
+        line-height: 75px;
+    }
+
+    .drinks h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .images {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+
+    .images div {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 180px; 
+    }
+
+    .images button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 60px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: #760C3C;
+        color: white;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 38.73px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+a {
+    text-decoration: none;
+}
+   
+    p {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 767px) {
     .back {
         left: 10px;
         width: 40px;
         height: 40px;
     }
+
+    
+    .drinks h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .drinks h2 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    
+    .images {
+        margin-top: 50px;
+        justify-content: center; 
+        gap: 15px;
+    }
+
+    .images div {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 150px; 
+    }
+
+    .images button {
+        width: 150px; 
+        font-size: 18px; 
+      
+    }
+
+    
+    p {
+        margin-top: 50px;
+        font-size: 18px;
+    }
 }
-a{
-    text-decoration: none;
-}
+
