@@ -176,3 +176,10 @@ body{
     justify-content: center;
     cursor: pointer;
 }
+@media ( max-width : 767px ) {
+    .back {
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
