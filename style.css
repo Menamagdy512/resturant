@@ -241,3 +241,10 @@ p{
         padding: 1rem;
     }
 }
+
+
+
+.drinks .images button a{
+    text-decoration: none;
+    color: white;
+}
