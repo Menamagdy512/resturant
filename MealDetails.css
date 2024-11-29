@@ -5,18 +5,18 @@
     box-sizing: border-box;
 }
 
-.meal-details {
+body {
     background-color:#426E5D ;
-    color: #ffffff;
-    min-height: 100vh;
+   
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1640px;
     margin: 0 auto;
+    padding: 0 20PX;
 }
 
-header {
+.upper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +76,7 @@ h2 {
     margin: 0 auto;
     line-height: 1.6;
     font-size: 30px;
+    color: #ffffff;
 }
 
 
