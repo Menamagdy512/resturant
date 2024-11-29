@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-menu{
+    background-color: #426E5D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 1550px;
+    margin-bottom: 10px;
+}
+
+.side-image {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.buttons-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-image: url('/images/Rectangle 38.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.menu-button {
+    background-color: #800040;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.footer-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* الشاشات المتوسطة */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        height: auto; 
+    }
+
+    .side-image {
+        width: 150px; 
+        object-fit: cover;
+    }
+
+    .buttons-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 12px; 
+        width: 100%;
+        padding: 15px; 
+    }
+
+    .menu-button {
+        padding: 12px 25px; 
+        font-size: 15px; 
+    }
+    .footer-image {
+    
+        height: 60px;
+    }
+    .header-image {
+       
+        height: 60px;
+    }
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+        
+    }
+
+    .side-image {
+        display: none; 
+    }
+
+    .buttons-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px; 
+        width: 90%; 
+        padding: 10px; 
+    }
+
+    .menu-button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
+
+    .footer-image {
+        width: 90%; 
+        height: 60px;
+    }
+    .header-image {
+        width: 90%; 
+        height: 60px;
+    }
+}
+

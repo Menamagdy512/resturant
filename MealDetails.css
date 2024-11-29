@@ -1,11 +1,11 @@
 
- *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.meal-details {
     background-color:#426E5D ;
     color: #ffffff;
     min-height: 100vh;
@@ -44,7 +44,6 @@ h1 {
 .food-image {
     height: 300px;
     margin: 0 auto 30px;
-  
 }
 
 .food-image img {
@@ -72,7 +71,6 @@ h2 {
 }
 
 .description {
-   
     margin: 0 auto;
     line-height: 1.6;
     font-size: 30px;
