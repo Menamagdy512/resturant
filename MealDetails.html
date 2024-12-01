@@ -6,7 +6,6 @@
     <title>MainMeals</title>
     <link rel="stylesheet" href="MealDetails.css">
 </head>
-<body>
 
 <body > 
     <div class="container">
@@ -41,12 +40,22 @@
     
         <header class="upper">
             <h1><span class="magenta">Main</span> meals</h1>
+            
         </header>
         
         <div class="menu-item">
+            <!-- slider -->
             <div class="food-image">
-                <img src="/images/Rectangle 41.png" alt="Alfredo pasta dish">
+                <div class="slider">
+                  
+                    <img src="/images/Rectangle 41.png" alt="Alfredo pasta dish">
+                    <img src="/images/Rectangle 41.png" alt="Alfredo pasta dish">
+                    <img src="/images/Rectangle 41.png" alt="Alfredo pasta dish">
+                </div>
+                <button class="prev">‹</button>
+                <button class="next">›</button>
             </div>
+            <!-- content -->
             
             <div class="item-details">
                 <h2><span class="magenta">Alfredo</span> pasta</h2>
@@ -57,10 +66,58 @@
             </div>
         </div>
     </div>
-
-
-
     <a  href="pasta-card.html" class="back"><img src="/images/back.png" alt=""></a>
+
+
+   
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slider img');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+    
+
+       
+        // تحديث وضع السلايدر بناءً على الفهرس الحالي
+        function updateSlider() {
+            const slideWidth = slides[0].clientWidth; // عرض الصورة الواحدة
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // تحريك السلايدر
+        }
+    
+        // عند النقر على زر "التالي"
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // العودة إلى أول صورة
+            }
+            updateSlider();
+        });
+    
+        // عند النقر على زر "السابق"
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slides.length - 1; // الانتقال إلى آخر صورة
+            }
+            updateSlider();
+        });
+    
+        // عند تغيير حجم الشاشة، يتم تحديث العرض
+        window.addEventListener('resize', () => {
+            
+            updateSlider();
+        });
+    
+        // ضبط العرض عند تحميل الصفحة
+        window.addEventListener('DOMContentLoaded', () => {
+            
+            updateSlider();
+        });
+    </script>
+    
 
 </body>
 </html>
